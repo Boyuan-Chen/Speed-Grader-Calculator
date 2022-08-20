@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Speed Grader Calculator",
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Speed Grader Calculator",
+    "default_popup": "popup.html"
+  },
+  "content_scripts" : [{
+    "matches": ["https://*/*"],
+    "js": ["content.js"]
+  }],
+  "permissions": ["activeTab", "tabs"]
+}
